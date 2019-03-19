@@ -1,0 +1,234 @@
+
+html{
+    overflow-y: scroll;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family:'Noto Sans KR', sans-serif;
+    color: #333333;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.headerContainer{
+    color:#444444;
+    font-weight: 500;
+    display:flex;
+    justify-content: space-between;
+    height:70px;
+}
+
+.header{
+    position:fixed;
+    width: 100%;
+    z-index:5;
+    transition: margin 0.4s, background-color 0.2s;
+    background-color: rgba(255, 255, 255, 0.95);;
+}
+
+.logo{
+    font-size:20px;
+    padding-top:22px;
+    font-weight: 500;
+    transition:color 0.2s;
+}
+
+.rightMenu{
+    display:flex;
+    font-size:18px;
+    transition:color 0.2s;
+}
+.rightMenu__child{
+    padding: 23px 15px 20px 15px
+}
+.rightMenu__child:last-child{
+    padding-right: 0px;
+}
+.main-title{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size:20px;
+    font-weight: 400;
+    color: #919191;
+}
+.showBox-click-area{
+    position: absolute;
+    z-index:2;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background-color: aqua;
+}
+
+.showBox-wrap{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.flicking-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:35px;
+    width:100px;
+    left:50%;
+    margin-left: -50px;
+    z-index: 10;
+}
+.flicking-dot{
+    margin:3px;
+    border-radius: 10px;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    opacity:1;
+    transition: opacity 0.3s, color 1s;
+}
+
+.showBox-button{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:3;
+}
+.showBox-button-prev{
+    margin-left:20px;
+    padding: 20px;
+    z-index:3;
+}
+.showBox-button-next{
+    margin-right:20px;
+    padding: 20px;
+    z-index:3;
+}
+.showBox-contents{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.showBox-img{
+    display:block;
+    margin:0 auto;
+    height: 100%;
+    min-width: 1920;
+    min-height: 100vh;
+}
+.showBox-movie{
+    display:block;
+    margin:0 auto;
+    height: 100%;
+    min-width: 1920;
+    min-height: 100vh;
+}
+.showBox-info{
+    position: absolute;
+    color:white;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    margin: auto;
+    width:75%;
+    max-width:1500px;
+    margin:auto;
+    font-size:30px;
+    z-index:2;
+    font-weight: 500;
+}
+
+.showBox-info-inside{
+    display:inline-block;
+    border-bottom: 3px solid #333333;
+    padding-bottom: 6px;
+}
+.showBox-component-wrap{
+    width: 100%;
+    position: relative;
+    background-color: beige;
+    overflow:hidden;
+    z-index:1;
+}
+.showBox-container{
+
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+    .showBox-img{
+        max-width: 100%;
+        height:auto;
+        min-height: 3px;
+    }
+
+    .showBox-wrap{
+        box-sizing: border-box;
+        position: relative;
+        height:50vh;
+    }
+
+    .showBox-component-wrap{
+        background-color: tomato;
+    }
+    .showBox-button{
+        display:none;
+    }
+    .showBox-img{
+        padding-bottom: 10px;
+    }
+    .showBox-info{
+        left: 0;
+        right: 0;
+        bottom: 48px;
+        margin: auto;
+        width:90%;
+        margin:auto;
+        font-size:20px;
+        z-index:2;
+        font-weight: 500;
+    }
+    .showBox-info-inside{
+        border-bottom: 2px solid #333333;
+        padding-bottom: 3px;
+    }
+    .main-title{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size:18px;
+        font-weight: 400;
+        color: #919191;
+    }
+    
+    .rightMenu{
+        font-size:16px;
+    }
+    .rightMenu__child:last-child{
+        padding-left:8px;
+    }
+
+    .logo{
+        font-size:18px;
+    }
+    .flicking-dots{
+        bottom:20px;
+    }
+    .flicking-dot{
+        margin:3px;
+        border-radius: 10px;
+        width: 7px;
+        height: 7px;
+    }
+}
