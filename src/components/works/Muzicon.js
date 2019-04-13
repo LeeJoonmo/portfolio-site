@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../Card.css";
-
 // over.addEventListener('mouseenter', _enterEvent);
 
 class Muzicon extends Component {
@@ -53,7 +52,6 @@ class Muzicon extends Component {
               />
             </div>
           </div>
-         
           <div className="work-uptext">Still Image</div>
           <img
             className="work-img"

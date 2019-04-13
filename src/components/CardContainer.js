@@ -2,6 +2,7 @@ import React, { Component} from "react";
 import { NavLink } from "react-router-dom";
 import Card from "./Card";
 import "./Card.css";
+import Fade from 'react-reveal/Fade';
 
 
 class CardContainer extends Component {
@@ -48,10 +49,11 @@ class CardContainer extends Component {
   render() {
     return (
       <div>
-        
-          <div className="cardContainer">{this.cardList}</div>
-        
-     
+          <div className="cardContainer">
+            <Fade>
+            {this.cardList}
+            </Fade>
+          </div>
         </div>
     );
   }

@@ -5,26 +5,29 @@ import './Header.css';
 
 
 class WorkPage extends Component {
-
+    state = {
+        worksData : this.props.worksData
+    }
     componentDidMount(){
         window.scrollTo(0,0);
       }
 
     render(){
-
-        const uiWorks = this.props.worksData.filter((work) =>
+        const {worksData} = this.state;
+        const uiWorks = worksData.filter((work) =>
             work.category === 'ui'
         );
         
-        const brandingWorks = this.props.worksData.filter((work) =>
+        const brandingWorks = worksData.filter((work) =>
         work.category === 'branding'
         );
 
-        const etcWorks = this.props.worksData.filter((work) =>
+        const etcWorks = worksData.filter((work) =>
         work.category === 'etc'
         );
-
+console.log(uiWorks);
         return(
+            
             <div>
                 <div className = "container">
                 <div style = {{height: 35}}></div>
@@ -33,7 +36,7 @@ class WorkPage extends Component {
                 <div className = "work-category">BRANDING, CHARACTER</div>
                 <CardContainer worksData = {brandingWorks}/>
                 <div className = "work-category">ETC, EXPERIENCE</div>
-                <CardContainer worksData = {etcWorks}/>
+
                 </div>
             </div>
         );
@@ -41,3 +44,6 @@ class WorkPage extends Component {
 }
 
 export default WorkPage;
+
+
+
