@@ -42,8 +42,7 @@ class CardContainer extends Component {
     <NavLink className="card" to = {`/workDetail/${work.name}`} key={index}>
       <Card title = {work.title} info = {work.info} thumbnail = {work.thumbnail}/>
     </NavLink>
-    
-)
+  )
 
   
   render() {

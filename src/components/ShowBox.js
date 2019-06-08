@@ -164,6 +164,7 @@ class ShowBox extends Component {
       }
     };
     window.addEventListener("scroll", debounce(_handleScroll));
+    clearTimeout(interval);
   }
 
   componentWillUnmount() {

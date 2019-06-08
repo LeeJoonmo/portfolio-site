@@ -2,6 +2,7 @@ import React, { Component , Fragment} from "react";
 import "./Card.css";
 import "./Header.css";
 class ShowBoxSecond extends Component {
+
   render() {
     return (
       <Fragment>

@@ -12,7 +12,7 @@ class MainPage extends Component {
       <div>
         <ShowBox/>
         <div className = "container" >
-        <div className = "main-title">Works</div>
+        <div className = "main-title" style = {{color: "#333333"}}>Works</div>
         <CardContainer worksData = {this.state.worksData}/>
         <div className = "footer">
 Love today.

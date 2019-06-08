@@ -183,7 +183,10 @@ body{
     .showBox-component-wrap{
         background-color: tomato;
     }
-    .showBox-button{
+    .showBox-button-prev{
+        display:none;
+    }
+    .showBox-button-next{
         display:none;
     }
     .showBox-img{
