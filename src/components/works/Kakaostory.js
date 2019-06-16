@@ -3,6 +3,7 @@ import "../Card.css";
 import homesoso from '../../images/homesoso.gif'; // with import
 import hometree from '../../images/hometree.gif'; // with import
 import homenewyear from '../../images/homenewyear.gif'; // with import
+import sosoin from '../../images/sosoin.gif'; // with import
 // over.addEventListener('mouseenter', _enterEvent);
 
 class Kakaostory extends Component {
@@ -28,36 +29,37 @@ class Kakaostory extends Component {
           </div>
 
           <div style = {{position: 'relative'}}>
-            <div style = {{width: '10%', left: '24%', height: "10%", top: "70%", backgroundColor: 'blue', position: 'absolute', zIndex: 6}}></div>
+            <img src = {sosoin} style={{width: '28.4%', left: '13.7%', top: "52.52%", position: 'absolute', zIndex: 2}}></img>
+           
             <img
               className="work-img"
               src="http://leejoonmo.com/workimg/kakaostory/01.jpg"
-              alt=" "
-              style = {{position: 'relative', zIndex: 3}}
+              alt="kakaostory01"
+              style = {{position: 'relative'}}
             />
           </div>
           <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homesoso}></img></div>
+            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homesoso} alt = ""></img></div>
             <img
               style = {{width: "100%"}}
               src="http://leejoonmo.com/workimg/kakaostory/02.jpg"
-              alt=" "
+              alt="kakaostory02"
             />
           </div>
           <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {hometree}></img></div>
+            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {hometree} alt = ""></img></div>
             <img
               style = {{width: "100%"}}
               src="http://leejoonmo.com/workimg/kakaostory/03.jpg"
-              alt=" "
+              alt="kakaostory03"
             />
           </div>
           <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homenewyear}></img></div>
+            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homenewyear} alt = ""></img></div>
             <img
               style = {{width: "100%"}}
               src="http://leejoonmo.com/workimg/kakaostory/04.jpg"
-              alt=" "
+              alt="kakaostory04"
             />
           </div>
         </div>
