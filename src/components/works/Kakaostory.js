@@ -62,6 +62,9 @@ class Kakaostory extends Component {
               alt="kakaostory04"
             />
           </div>
+          <div style = {{display: "flex", justifyContent: 'center', alignItems:'center', overflow:"hidden", backgroundColor: "tomato"}}>
+            <iframe src="https://player.vimeo.com/video/342688481?autoplay=1&loop=1&title=0&background=1" width= "1920" height= "1080" frameborder="0"/>
+          </div>
         </div>
       </div>
     );

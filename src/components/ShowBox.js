@@ -5,7 +5,6 @@ import { virtualize, bindKeyboard } from "react-swipeable-views-utils";
 import ShowBoxFirst from "./ShowBoxFirst";
 import ShowBoxSecond from "./ShowBoxSecond";
 import ShowBoxThird from "./ShowBoxThird";
-import { Link } from "react-router-dom";
 
 const VirtualizeSwipeableViews = bindKeyboard(virtualize(SwipeableViews));
 let interval = null;
@@ -14,8 +13,6 @@ class ShowBox extends Component {
   constructor(props) {
     super(props);
     this.state = { index: 0, white: false };
-    this._next = this._next.bind(this);
-    this._prev = this._prev.bind(this);
     this._checkHeaderColor = this._checkHeaderColor.bind(this);
     this._slideRenderer = this._slideRenderer.bind(this);
     this._onChangeIndexFunction = this._onChangeIndexFunction.bind(this);
@@ -25,7 +22,7 @@ class ShowBox extends Component {
     const { index, key } = params;
     let showBoxDiv;
 
-    switch (Math.abs(index % 3)) {
+    switch (Math.abs(index) % 3) {
       case 0:
         showBoxDiv = <ShowBoxFirst />;
         break;
@@ -71,12 +68,11 @@ class ShowBox extends Component {
   };
 
   _changeBlackWhite = () => {
-
     const dots = document.querySelectorAll(".flicking-dot");
     const rightMenu = document.querySelector(".rightMenu");
     const logo = document.querySelector(".logo");
     dots.forEach((dot, index) => {
-      if (Math.abs(this.state.index % 3 === index)) {
+      if (Math.abs(this.state.index % 3) === index) {
         dot.style.opacity = 1;
       } else {
         dot.style.opacity = 0.3;
@@ -85,35 +81,35 @@ class ShowBox extends Component {
     if (this.state.white) {
       logo.style.color = "rgb(255,255,255)";
       rightMenu.style.color = "rgb(255,255,255)";
-      dots.forEach((dot) => {
+      dots.forEach(dot => {
         dot.style.backgroundColor = "white";
       });
-      
-    }else {
+    } else {
       logo.style.color = "inherit";
       rightMenu.style.color = "inherit";
-      dots.forEach((dot) => {
+      dots.forEach(dot => {
         dot.style.backgroundColor = "#989898";
       });
     }
-  }
+  };
+
   _checkHeaderColor = () => {
     const showBox = document.querySelectorAll(".showBox-container");
     if (showBox.length === 1) {
       if (window.scrollY < 1000) {
         switch (Math.abs(this.state.index % 3)) {
           case 0:
-            this.setState({white : false});
+            this.setState({ white: false });
             this._changeBlackWhite();
             break;
 
           case 1:
-            this.setState({white : false});
+            this.setState({ white: false });
             this._changeBlackWhite();
             break;
 
           case 2:
-            this.setState({white : true});
+            this.setState({ white: true });
             this._changeBlackWhite();
 
             break;
@@ -134,7 +130,6 @@ class ShowBox extends Component {
     const showBoxContentsWrap = document.querySelector(
       ".showBox-component-wrap"
     );
-    // const views = document.querySelector('.views');
     const windowHeight = window.innerHeight;
     const debounce = (func, wait = 3, immediate = true) => {
       var timeout;
@@ -158,7 +153,6 @@ class ShowBox extends Component {
       if (scrollY < windowHeight) {
         let opacityNum = 1 - 0.6 / (windowHeight / scrollY);
         showBoxContentsWrap.style.opacity = opacityNum.toFixed(2);
-        // views.style.paddingTop = (scrollY/2) + "px";
       } else {
         return;
       }
@@ -178,59 +172,46 @@ class ShowBox extends Component {
   }
   render() {
     const { index, white } = this.state;
-    let indexToWork = "";
-    switch (Math.abs(index % 3)) {
-      case 0:
-        indexToWork = "kakaostory";
-        break;
-      case 1:
-        indexToWork = "daummobile";
-        break;
-      case 2:
-        indexToWork = "daumlocal";
-        break;
-      default:
-        break;
-    }
-
     return (
-      <div className="showBox-container">
+      <div className="showBox-container" id="showBox-container">
         <div className="showBox-component-wrap">
-          <div className="flicking-dots">
-            <div className="flicking-dot" />
-            <div className="flicking-dot" />
-            <div className="flicking-dot" />
-          </div>
-          <div className="showBox-button">
-            <Link
-              to={`/workDetail/${indexToWork}`}
-              className="showBox-click-area"
-            />
-            <div className="showBox-button-prev" onClick={this._prev}>
-              <svg className = "showBox-button-svg" height="40" width="24">
-                <polyline
-                  points="14,1 1,14  14, 29 "
-                  style = {{fill: "none", stroke: white === true ? "white" : "#333333", strokeWidth:2}}
-                />
-              </svg>
-            </div>
-            <div className="showBox-button-next" onClick={this._next}>
-            <svg className = "showBox-button-svg" height="40" width="24">
-                <polyline
-                  points="1,1 14,14  1, 29 "
-                  style = {{fill: "none", stroke: white === true ? "white" : "#333333", strokeWidth:2}}
-                />
-              </svg>
-            </div>
-          </div>
-
           <VirtualizeSwipeableViews
-            className="views"
             index={index}
             slideRenderer={this._slideRenderer}
             onTransitionEnd={this._checkHeaderColor}
             onChangeIndex={this._onChangeIndexFunction}
           />
+          <div className="flicking-dots">
+            <div className="flicking-dot" />
+            <div className="flicking-dot" />
+            <div className="flicking-dot" />
+          </div>
+          <div className="showBox-button-prev" id="prev" onClick={this._prev}>
+            <svg className="showBox-button-svg" height="40" width="24">
+              <polyline
+                points="14,1 1,14  14, 29 "
+                style={{
+                  fill: "none",
+                  stroke: white === true ? "white" : "#333333",
+                  strokeWidth: 2
+                }}
+              />
+            </svg>
+          </div>
+          <div className="showBox-button-next" id="next" onClick={this._next}>
+            <div className="svg-container">
+              <svg className="showBox-button-svg" height="40" width="24">
+                <polyline
+                  points="1,1 14,14  1, 29 "
+                  style={{
+                    fill: "none",
+                    stroke: white === true ? "white" : "#333333",
+                    strokeWidth: 2
+                  }}
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     );

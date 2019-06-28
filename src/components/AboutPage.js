@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
-import testVideo from "../../src/images/testvideo.mp4";
-import motionVideo from "../../src/images/motionvideo.mp4";
 import ui01 from "../../src/images/01.png";
 import Character from "../../src/images/character.png";
 import Code from "../../src/images/code.png";
@@ -117,7 +115,13 @@ class AbouPage extends Component {
                   }
                 >
                   <Tween
-                    to={{ width: "100%", marginTop: 0, height: "100%",maxHeight: "1968px", maxWidth: "3500px" }}
+                    to={{
+                      width: "100%",
+                      marginTop: 0,
+                      height: "100%",
+                      maxHeight: "1968px",
+                      maxWidth: "3500px"
+                    }}
                   >
                     <div
                       style={{
@@ -125,7 +129,7 @@ class AbouPage extends Component {
                         width: "75%",
                         maxWidth: "1500px",
                         minHeight: "700px",
-                        overflow: 'hidden',
+                        overflow: "hidden",
                         position: "absolute",
                         left: 0,
                         right: 0,
@@ -138,7 +142,11 @@ class AbouPage extends Component {
                         zIndex: 2
                       }}
                     >
-                      <img src={ui01} style = {{height: '100%', maxHeight: "900px"}} alt = "" />
+                      <img
+                        src={ui01}
+                        style={{ height: "100%", maxHeight: "900px" }}
+                        alt=""
+                      />
                       <div
                         style={{
                           color: "white",
@@ -155,7 +163,9 @@ class AbouPage extends Component {
                         Product Design
                         <br />
                         <div style={{ fontSize: 20, paddingTop: 15 }}>
-                          서비스 특성을 정확히 이해하고, 그에 맞는 디지털 제품을 디자인합니다. 개발에 대한 높은 수준의 이해도를 바탕으로 디자인 합니다.
+                          서비스 특성을 정확히 이해하고, 그에 맞는 디지털 제품을
+                          디자인합니다. 개발에 대한 높은 수준의 이해도를
+                          바탕으로 디자인 합니다.
                         </div>
                       </div>
                     </div>
@@ -186,7 +196,7 @@ class AbouPage extends Component {
                           diplay: "flex",
                           justifyContent: "center",
                           alignItems: "center",
-                          width: '100%',
+                          width: "100%"
                         }}
                       >
                         <div>
@@ -206,12 +216,11 @@ class AbouPage extends Component {
                             Branding
                             <br />
                             <div style={{ fontSize: 20, paddingTop: 15 }}>
-                              기업브랜딩, 서비스브랜딩, 캐릭터 브랜딩 및 마케팅을 다룹니다. 
+                              기업브랜딩, 서비스브랜딩, 캐릭터 브랜딩 및
+                              마케팅을 다룹니다.
                             </div>
                           </div>
-                          <video width="100%" autoPlay muted loop>
-                            <source src={testVideo} />
-                          </video>
+                          <img src={Code} style={{ width: "100%" }} />
                         </div>
                       </div>
                     </div>
@@ -251,12 +260,11 @@ class AbouPage extends Component {
                         Motion
                         <br />
                         <div style={{ fontSize: 20, paddingTop: 15 }}>
-                        모션 표현에 대한 강점이 있습니다. 영상, 인터렉션을 사용하여 매력적인 디자인을 할 수 있습니다. 
+                          모션 표현에 대한 강점이 있습니다. 영상, 인터렉션을
+                          사용하여 매력적인 디자인을 할 수 있습니다.
                         </div>
                       </div>
-                      <video width="100%" autoPlay muted loop>
-                            <source src={motionVideo} />
-                          </video>
+                      <img src={Code} style={{ width: "100%" }} />
                     </div>
                   </Tween>
                   <Tween
@@ -274,12 +282,12 @@ class AbouPage extends Component {
                         justifyContent: "center",
                         alignItems: "center",
                         backgroundColor: "black",
-                        overflow: 'hidden',
+                        overflow: "hidden",
                         zIndex: 4,
                         boxShadow: "0px 0px 20px rgba(0,0,0,0.4)"
                       }}
                     >
-                    <img src = {Character} style = {{width: '100%'}} ></img>
+                      <img src={Character} style={{ width: "100%" }} />
                       <div
                         style={{
                           color: "white",
@@ -296,12 +304,13 @@ class AbouPage extends Component {
                         Character
                         <br />
                         <div style={{ fontSize: 20, paddingTop: 15 }}>
-                          캐릭터 브랜딩을 담당하여, 브랜드자산으로서 카카오프렌즈의 성장을 초기부터 함께했습니다.
+                          캐릭터 브랜딩을 담당하여, 브랜드자산으로서
+                          카카오프렌즈의 성장을 초기부터 함께했습니다.
                         </div>
                       </div>
                     </div>
                   </Tween>
-                  <Tween to={{marginTop: 0, top: 0, maxWidth: "inherit" }}>
+                  <Tween to={{ marginTop: 0, top: 0, maxWidth: "inherit" }}>
                     <div
                       style={{
                         width: "100%",
@@ -321,7 +330,7 @@ class AbouPage extends Component {
                         boxShadow: "0px 0px 20px rgba(0,0,0,0.3)"
                       }}
                     >
-                    <img src = {Code} style = {{width: '100%'}} ></img>
+                      <img src={Code} style={{ width: "100%" }} />
                       <div
                         style={{
                           color: "white",
@@ -338,7 +347,9 @@ class AbouPage extends Component {
                         Code
                         <br />
                         <div style={{ fontSize: 20, paddingTop: 15 }}>
-                          더 좋은 디자인을 위해 Hi-fi 프로토타입을 거칩니다. 일정 수준의 앱, 웹 빌드가 가능합니다. Javascript, React, React-native, Framer를 사용합니다.
+                          더 좋은 디자인을 위해 Hi-fi 프로토타입을 거칩니다.
+                          일정 수준의 앱, 웹 빌드가 가능합니다. Javascript,
+                          React, React-native, Framer를 사용합니다.
                         </div>
                       </div>
                     </div>
