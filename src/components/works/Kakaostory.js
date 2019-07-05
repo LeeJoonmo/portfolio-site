@@ -102,10 +102,17 @@ class Kakaostory extends Component {
               alt="kakaostory04"
             />
           </div>
-          <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+          <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
             <iframe
+              title="test"
               src="https://player.vimeo.com/video/345725942?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
-              style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%"
+              }}
               frameborder="0"
               allow="autoplay; fullscreen"
               allowfullscreen
@@ -119,5 +126,3 @@ class Kakaostory extends Component {
 }
 
 export default Kakaostory;
-
-
