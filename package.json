@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animated": "^0.2.2",
+    "gsap": "^2.1.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-gsap": "^1.2.0",

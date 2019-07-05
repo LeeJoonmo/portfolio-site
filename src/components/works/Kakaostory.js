@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../Card.css";
-import homesoso from '../../images/homesoso.gif'; // with import
-import hometree from '../../images/hometree.gif'; // with import
-import homenewyear from '../../images/homenewyear.gif'; // with import
-import sosoin from '../../images/sosoin.gif'; // with import
+import homesoso from "../../images/homesoso.gif"; // with import
+import hometree from "../../images/hometree.gif"; // with import
+import homenewyear from "../../images/homenewyear.gif"; // with import
+import sosoin from "../../images/sosoin.gif"; // with import
 // over.addEventListener('mouseenter', _enterEvent);
 
 class Kakaostory extends Component {
@@ -28,43 +28,90 @@ class Kakaostory extends Component {
             </div>
           </div>
 
-          <div style = {{position: 'relative'}}>
-            <img src = {sosoin} style={{width: '28.4%', left: '13.7%', top: "52.52%", position: 'absolute', zIndex: 2}}></img>
-           
+          <div style={{ position: "relative" }}>
+            <img
+              src={sosoin}
+              style={{
+                width: "28.4%",
+                left: "13.7%",
+                top: "52.52%",
+                position: "absolute",
+                zIndex: 2
+              }}
+              alt=""
+            />
+
             <img
               className="work-img"
               src="http://leejoonmo.com/workimg/kakaostory/01.jpg"
               alt="kakaostory01"
-              style = {{position: 'relative'}}
+              style={{ position: "relative" }}
             />
           </div>
-          <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homesoso} alt = ""></img></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: 50
+            }}
+          >
+            <div style={{ width: "30%", position: "absolute", zIndex: 3 }}>
+              {" "}
+              <img style={{ width: "100%" }} src={homesoso} alt="" />
+            </div>
             <img
-              style = {{width: "100%"}}
+              style={{ width: "100%" }}
               src="http://leejoonmo.com/workimg/kakaostory/02.jpg"
               alt="kakaostory02"
             />
           </div>
-          <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {hometree} alt = ""></img></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: 50
+            }}
+          >
+            <div style={{ width: "30%", position: "absolute", zIndex: 3 }}>
+              {" "}
+              <img style={{ width: "100%" }} src={hometree} alt="" />
+            </div>
             <img
-              style = {{width: "100%"}}
+              style={{ width: "100%" }}
               src="http://leejoonmo.com/workimg/kakaostory/03.jpg"
               alt="kakaostory03"
             />
           </div>
-          <div style = {{display: "flex", justifyContent: "center", alignItems: "center", marginBottom: 50}}>
-            <div style = {{width: "30%", position: "absolute", zIndex: 3}}> <img style = {{width: "100%"}}src = {homenewyear} alt = ""></img></div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: 50
+            }}
+          >
+            <div style={{ width: "30%", position: "absolute", zIndex: 3 }}>
+              {" "}
+              <img style={{ width: "100%" }} src={homenewyear} alt="" />
+            </div>
             <img
-              style = {{width: "100%"}}
+              style={{ width: "100%" }}
               src="http://leejoonmo.com/workimg/kakaostory/04.jpg"
               alt="kakaostory04"
             />
           </div>
-          <div style = {{display: "flex", justifyContent: 'center', alignItems:'center', overflow:"hidden", backgroundColor: "tomato"}}>
-            <iframe src="https://player.vimeo.com/video/342688481?autoplay=1&loop=1&title=0&background=1" width= "1920" height= "1080" frameborder="0"/>
+          <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+            <iframe
+              src="https://player.vimeo.com/video/345725942?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
+              style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}}
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            />
           </div>
+          <script src="https://player.vimeo.com/api/player.js" />
         </div>
       </div>
     );
@@ -72,3 +119,5 @@ class Kakaostory extends Component {
 }
 
 export default Kakaostory;
+
+

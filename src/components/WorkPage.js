@@ -22,9 +22,9 @@ class WorkPage extends Component {
         work.category === 'branding'
         );
 
-        const etcWorks = worksData.filter((work) =>
-        work.category === 'etc'
-        );
+        // const etcWorks = worksData.filter((work) =>
+        // work.category === 'etc'
+        // );
 console.log(uiWorks);
         return(
             
