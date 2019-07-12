@@ -7,7 +7,7 @@ class Rio extends Component {
       <div>
         <div className="work-detail-container">
           <div className="work-info">
-            <div className="work-info-title">뜻밖의 리우</div>
+            <div className="work-info-title">카카오 뱅크</div>
             <div className="work-info-detail">
               2016 리우데자네이루 올림픽을 맞아 응원의 메세지를 전달하는
               캠페인이다. 카카오프렌즈가 가진 '일상'이라는 키워드와 올림픽 주요
@@ -19,8 +19,7 @@ class Rio extends Component {
                 Kakao Corp
               </div>
               <div className="work-cowork">
-                Cowork with Rae Kim, Soohyun Kang,&nbsp;{" "}
-                <div>Junggun Park </div>
+                Cowork with Sungmoon Cho, Youngjin Yun
               </div>
             </div>
           </div>
@@ -41,44 +40,40 @@ class Rio extends Component {
           <div className="work-uptext">Still Image</div>
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/01.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/01.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/02.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/02.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/03.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/03.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/04.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/04.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/05.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/05.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/06.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/06.jpg"
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/rio/07.jpg"
+            src="http://leejoonmo.com/workimg/kakaobank/07.jpg"
             alt=" "
           />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/rio/08.jpg"
-            alt=" "
-          />
+
         </div>
       </div>
     );

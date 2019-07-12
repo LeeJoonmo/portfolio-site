@@ -1,20 +1,37 @@
-import React, { Component , Fragment} from "react";
+import React, { Component, Fragment } from "react";
 import "./Card.css";
 import "./Header.css";
-class ShowBoxThird extends Component {
+import { Link } from "react-router-dom";
+
+class ShowBoxFirst extends Component {
   render() {
     return (
       <Fragment>
-        <div className = "showBox-wrap">
-        <div className = "showBox-info"><div className = "showBox-info-inside" style = {{color:'#ffffff', borderBottomColor:'white'}}>Kakao Weather collection</div></div>
-        <div className = "showBox-contents" style = {{backgroundColor:'#405B9A'}}>
-          <img className = "showBox-img" src =  "http://leejoonmo.com/workimg/weather/01.jpg" alt =" "></img>
-        </div>
-
-        </div>
+        <Link to="/workDetail/arttalk">
+          <div className="showBox-wrap">
+            <div className="showBox-info">
+              <div
+                className="showBox-info-inside"
+                style={{ color: "white", borderBottomColor: "white" }}
+              >
+                Art Talk
+              </div>
+            </div>
+            <div
+              className="showBox-contents"
+              style={{ backgroundColor: "#2F3031" }}
+            >
+              <img
+                className="showBox-img"
+                src="http://leejoonmo.com/thumbnail/showbox.png"
+                alt=" "
+              />
+            </div>
+          </div>
+        </Link>
       </Fragment>
     );
   }
 }
 
-export default ShowBoxThird;
+export default ShowBoxFirst;

@@ -14,3 +14,5 @@ export { default as Kakaodriver } from './Kakaodriver';
 export { default as Camping } from './Camping';
 export { default as Typeface } from './Typeface';
 export { default as Village } from './Village';
+export { default as ArtTalk } from './ArtTalk';
+export { default as Kakaobank } from './Kakaobank';

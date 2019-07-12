@@ -12,7 +12,7 @@ class Daumlocal extends Component {
         <div className="work-info">
             <div className="work-info-title">Local Search</div>
             <div className="work-info-detail">
-            다음 검색의 장소 검색 컬렉션을 개편하고 운영했다. <br/>방대하고 다양한 로컬 데이터를 디테일하게 다루었던 프로젝트. 
+            다음 검색의 장소 검색 컬렉션을 개편하고 운영. <br/>방대하고 다양한 로컬 데이터를 디테일하게 다루었던 프로젝트. 
               </div>
             <div className="work-info-add">
               <div>2018 <div className="text-bar" />Kakao Corp</div>

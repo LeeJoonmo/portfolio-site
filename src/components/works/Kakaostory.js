@@ -14,7 +14,7 @@ class Kakaostory extends Component {
           <div className="work-info">
             <div className="work-info-title">Kakao Story Like Interaction</div>
             <div className="work-info-detail">
-              카카오스토리의 좋아요 인터렉션의 애니메이션을 제작했다.
+              좋아요 인터렉션의 애니메이션을 제작.
               <br /> 이벤트, 크리스마스, 새해 시즌에 맞춰 디자인했다.
             </div>
             <div className="work-info-add">
@@ -100,22 +100,6 @@ class Kakaostory extends Component {
               style={{ width: "100%" }}
               src="http://leejoonmo.com/workimg/kakaostory/04.jpg"
               alt="kakaostory04"
-            />
-          </div>
-          <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-            <iframe
-              title="test"
-              src="https://player.vimeo.com/video/345725942?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%"
-              }}
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
             />
           </div>
           <script src="https://player.vimeo.com/api/player.js" />

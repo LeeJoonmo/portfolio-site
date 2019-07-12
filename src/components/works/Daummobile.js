@@ -12,7 +12,7 @@ class Daummobile extends Component {
         <div className="work-info">
             <div className="work-info-title">Daum Mobile <br/>UI Update</div>
             <div className="work-info-detail">
-            다음 모바일의 통합검색 개편. 모바일 검색 전체 개편을 한 후, 카카오톡에 검색결과가 들어가게 되었다. 
+            다음 모바일의 통합검색 개편. 
               </div>
             <div className="work-info-add">
               <div>2018 <div className="text-bar" />Kakao Corp</div>

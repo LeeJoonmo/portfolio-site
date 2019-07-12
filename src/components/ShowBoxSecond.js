@@ -1,15 +1,14 @@
 import React, { Component , Fragment} from "react";
 import "./Card.css";
 import "./Header.css";
-class ShowBoxSecond extends Component {
-
+class ShowBoxThird extends Component {
   render() {
     return (
       <Fragment>
         <div className = "showBox-wrap">
-        <div className = "showBox-info" style = {{color:'#333333'}}><div className = "showBox-info-inside">Daum Mobile</div></div>
-        <div className = "showBox-contents" style = {{backgroundColor:'#F3F4F6'}}>
-          <img className = "showBox-img" src =  "http://leejoonmo.com/workimg/daummobile/tomain.jpg" alt =" "></img>
+        <div className = "showBox-info"><div className = "showBox-info-inside" style = {{color:'#ffffff', borderBottomColor:'white'}}>Kakao Weather collection</div></div>
+        <div className = "showBox-contents" style = {{backgroundColor:'#405B9A'}}>
+          <img className = "showBox-img" src =  "http://leejoonmo.com/workimg/weather/01.jpg" alt =" "></img>
         </div>
 
         </div>
@@ -18,4 +17,4 @@ class ShowBoxSecond extends Component {
   }
 }
 
-export default ShowBoxSecond;
+export default ShowBoxThird;

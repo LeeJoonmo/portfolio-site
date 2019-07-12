@@ -12,8 +12,8 @@ class Cheerup extends Component {
           <div className="work-info">
             <div className="work-info-title">Cheer Up</div>
             <div className="work-info-detail">
-              테러와 재난, 대한민국의 혼란스러운 시국으로 많은 사람들이 힘들어 하고 있던 시기에, Cheer up 메세지를 전달하고자 했다.
-  이모티콘과 다음 서비스 내의 이벤트를 통해 캠페인을 했다.
+              세계적 테러와 재난, 대한민국의 혼란스러운 시국으로 많은 사람들이 힘들어 하고 있던 시기에 Cheer up 메세지를 전달하고자 했다.
+  이모티콘과 서비스 이벤트들을 통한 캠페인을 했다.
               </div>
             <div className="work-info-add">
               <div>2016 <div className="text-bar" />Kakao Corp</div>

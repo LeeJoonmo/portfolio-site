@@ -22,6 +22,9 @@ class WorkPage extends Component {
         work.category === 'branding'
         );
 
+        const characterWorks = worksData.filter((work) =>
+        work.category === 'character'
+        );
         // const etcWorks = worksData.filter((work) =>
         // work.category === 'etc'
         // );
@@ -33,8 +36,10 @@ console.log(uiWorks);
                 <div style = {{height: 35}}></div>
                 <div className = "work-category" style = {{marginTop:35}}>UI/UX</div>
                 <CardContainer worksData = {uiWorks}/>
-                <div className = "work-category">BRANDING, CHARACTER</div>
+                <div className = "work-category">BRANDING</div>
                 <CardContainer worksData = {brandingWorks}/>
+                <div className = "work-category">CHARACTER</div>
+                <CardContainer worksData = {characterWorks}/>
                 <div className = "work-category">ETC, EXPERIENCE</div>
 
                 </div>

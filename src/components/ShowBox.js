@@ -104,7 +104,7 @@ class ShowBox extends Component {
             break;
 
           case 1:
-            this.setState({ white: false });
+            this.setState({ white: true });
             this._changeBlackWhite();
             break;
 
@@ -158,7 +158,6 @@ class ShowBox extends Component {
       }
     };
     window.addEventListener("scroll", debounce(_handleScroll));
-    clearTimeout(interval);
   }
 
   componentWillUnmount() {

@@ -9,7 +9,7 @@ class Camping extends Component {
         <div className="work-info">
             <div className="work-info-title">Friends Camping</div>
             <div className="work-info-detail">
-                카카오프렌즈의 캠핑 시즌 상품 및 스토어 일러스트를 위한 영상이다.
+                카카오프렌즈의 캠핑 시즌 상품 및 스토어 일러스트를 위한 영상.
               </div>
             <div className="work-info-add">
               <div>2014 <div className="text-bar" />Kakao Corp</div>
