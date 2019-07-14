@@ -74,6 +74,8 @@ class AboutPage extends Component {
     header.style.backgroundColor = "rgba(255, 255, 255, 0)";
   }
   render() {
+    const addressName = "leejoonmo";
+    const address = "gmail.com"
     return (
       <div>
         <Container>
@@ -106,8 +108,8 @@ class AboutPage extends Component {
                     <br />
                     카카오에서 디자이너로 일하고 있습니다.
                     <br />
-                    메일주소는 leejoonmo@gmail.com 입니다.
-                    <MyTitle>저는 이런 일을 합니다</MyTitle>
+                    메일주소는 {addressName + "@" + address} 입니다.
+                    <MyTitle>저는 다음과 같은 일들을 합니다</MyTitle>
                   </div>
                 </Tween>
               </Scene>
