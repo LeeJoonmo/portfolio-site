@@ -1,5 +1,15 @@
 import React, { Component } from "react";
 import "../Card.css";
+//import images
+import img01 from "../../images/workimg/kakaodriver/01.jpg";
+import img02 from "../../images/workimg/kakaodriver/02.jpg";
+import img03 from "../../images/workimg/kakaodriver/03.jpg";
+import img04 from "../../images/workimg/kakaodriver/04.jpg";
+import img05 from "../../images/workimg/kakaodriver/05.jpg";
+import img06 from "../../images/workimg/kakaodriver/06.jpg";
+import img07 from "../../images/workimg/kakaodriver/07.jpg";
+import img08 from "../../images/workimg/kakaodriver/08.jpg";
+import img09 from "../../images/workimg/kakaodriver/09.jpg";
 
 class Kakaodriver extends Component {
   render() {
@@ -34,15 +44,15 @@ class Kakaodriver extends Component {
             </div>
           </div>
           <div className = "work-uptext">Still Image</div>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/01.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/02.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/03.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/04.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/05.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/06.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/07.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/08.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/kakaodriver/09.jpg" alt=" "/>
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+          <img className="work-img" src={img05} alt=" "/>
+          <img className="work-img" src={img06} alt=" "/>
+          <img className="work-img" src={img07} alt=" "/>
+          <img className="work-img" src={img08} alt=" "/>
+          <img className="work-img" src={img09} alt=" "/>
           
         </div>
       </div>

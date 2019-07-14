@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "../Card.css";
-import homesoso from "../../images/homesoso.gif"; // with import
-import hometree from "../../images/hometree.gif"; // with import
-import homenewyear from "../../images/homenewyear.gif"; // with import
-import sosoin from "../../images/sosoin.gif"; // with import
-// over.addEventListener('mouseenter', _enterEvent);
+//import images
+import img01 from "../../images/workimg/kakaostory/01.jpg";
+import img02 from "../../images/workimg/kakaostory/02.jpg";
+import img03 from "../../images/workimg/kakaostory/03.jpg";
+import img04 from "../../images/workimg/kakaostory/04.jpg";
+import homesoso from "../../images/workimg/kakaostory/homesoso.gif"; // with import
+import hometree from "../../images/workimg/kakaostory/hometree.gif"; // with import
+import homenewyear from "../../images/workimg/kakaostory/homenewyear.gif"; // with import
+import sosoin from "../../images/workimg/kakaostory/sosoin.gif"; // with import
 
 class Kakaostory extends Component {
   render() {
@@ -43,7 +47,7 @@ class Kakaostory extends Component {
 
             <img
               className="work-img"
-              src="http://leejoonmo.com/workimg/kakaostory/01.jpg"
+              src={img01}
               alt="kakaostory01"
               style={{ position: "relative" }}
             />
@@ -62,7 +66,7 @@ class Kakaostory extends Component {
             </div>
             <img
               style={{ width: "100%" }}
-              src="http://leejoonmo.com/workimg/kakaostory/02.jpg"
+              src={img02}
               alt="kakaostory02"
             />
           </div>
@@ -80,7 +84,7 @@ class Kakaostory extends Component {
             </div>
             <img
               style={{ width: "100%" }}
-              src="http://leejoonmo.com/workimg/kakaostory/03.jpg"
+              src={img03}
               alt="kakaostory03"
             />
           </div>
@@ -98,11 +102,10 @@ class Kakaostory extends Component {
             </div>
             <img
               style={{ width: "100%" }}
-              src="http://leejoonmo.com/workimg/kakaostory/04.jpg"
+              src={img04}
               alt="kakaostory04"
             />
           </div>
-          <script src="https://player.vimeo.com/api/player.js" />
         </div>
       </div>
     );

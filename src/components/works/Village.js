@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "../Card.css";
 import { Controller, Scene } from "react-scrollmagic";
-import { Tween, Timeline } from "react-gsap";
-import village01 from "../../images/village01.jpg";
-import village02 from "../../images/village02.jpg";
-import village03 from "../../images/village03.jpg";
-import village04 from "../../images/village05.jpg";
-import village05 from "../../images/village04.jpg";
+import { Tween } from "react-gsap";
 import styled from "styled-components";
+//import images
+import img01 from "../../images/workimg/village/01.jpg";
+import img02 from "../../images/workimg/village/02.jpg";
+import img03 from "../../images/workimg/village/03.jpg";
+import img04 from "../../images/workimg/village/04.jpg";
+import img05 from "../../images/workimg/village/05.jpg";
+
 
 const StyledImg = styled.img`
 flex-basis:max-content;
@@ -70,19 +72,19 @@ class Village extends Component {
               <Tween to={{ left: -19500 }}>
                 <div style={{ display: "flex", alignItems: 'center',  position: "relative", left: 0 }}>
                 <ImgWrapper>
-                  <StyledImg src={village01} alt="" />
+                  <StyledImg src={img01} alt="" />
                   </ImgWrapper>
                   <ImgWrapper>
-                  <img style={imgStyle} src={village02} alt="" />
+                  <img style={imgStyle} src={img02} alt="" />
                   </ImgWrapper>
                   <ImgWrapper>
-                  <img style={imgStyle} src={village03} alt="" />
+                  <img style={imgStyle} src={img03} alt="" />
                   </ImgWrapper>
                   <ImgWrapper>
-                  <img style={imgStyle} src={village04} alt="" />
+                  <img style={imgStyle} src={img04} alt="" />
                   </ImgWrapper>
                   <ImgWrapper>
-                  <img style={imgStyle} src={village05} alt="" />
+                  <img style={imgStyle} src={img05} alt="" />
                   </ImgWrapper>
                 </div>
               </Tween>

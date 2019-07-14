@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "../Card.css";
-
-// over.addEventListener('mouseenter', _enterEvent);
+//import images
+import img01 from "../../images/workimg/daumlocal/01.jpg";
+import img02 from "../../images/workimg/daumlocal/02.jpg";
+import img03 from "../../images/workimg/daumlocal/03.jpg";
+import img04 from "../../images/workimg/daumlocal/04.jpg";
 
 class Daumlocal extends Component {
   
@@ -21,29 +24,11 @@ class Daumlocal extends Component {
             </div>
           </div>
         
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daumlocal/01.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daumlocal/02.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daumlocal/03.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daumlocal/04.jpg"
-            alt=" "
-          />
-
-                   
-          
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+         
         </div>
       </div>
     );

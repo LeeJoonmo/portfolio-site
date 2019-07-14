@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import "../Card.css";
-
-// over.addEventListener('mouseenter', _enterEvent);
+//import images
+import img01 from "../../images/workimg/popcorn/01.jpg";
+import img02 from "../../images/workimg/popcorn/02.jpg";
+import img03 from "../../images/workimg/popcorn/03.jpg";
+import img04 from "../../images/workimg/popcorn/04.jpg";
+import img05 from "../../images/workimg/popcorn/05.jpg";
 
 class Popcorn extends Component {
   render() {
@@ -70,31 +74,11 @@ class Popcorn extends Component {
             </div>
           </div>
           <div className="work-uptext">Still Image</div>
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/popcorn/01.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/popcorn/02.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/popcorn/03.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/popcorn/04.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/popcorn/05.jpg"
-            alt=" "
-          />
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+          <img className="work-img" src={img05} alt=" "/>
         </div>
       </div>
     );

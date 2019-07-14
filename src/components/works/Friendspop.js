@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import "../Card.css";
+//import images
+import img01 from "../../images/workimg/friendspop/01.jpg";
+import img02 from "../../images/workimg/friendspop/02.jpg";
+import img03 from "../../images/workimg/friendspop/03.jpg";
+import img04 from "../../images/workimg/friendspop/04.jpg";
+import img05 from "../../images/workimg/friendspop/05.jpg";
+import img06 from "../../images/workimg/friendspop/06.jpg";
+import img07 from "../../images/workimg/friendspop/06.jpg";
 
 class Friednspop extends Component {
   render() {
@@ -33,14 +41,13 @@ class Friednspop extends Component {
             </div>
           </div>
           <div className = "work-uptext">Still Image</div>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/01.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/02.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/03.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/04.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/05.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/06.jpg" alt=" "/>
-          <img className="work-img" src="http://leejoonmo.com/workimg/friendspop/07.jpg" alt=" "/>
-          
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+          <img className="work-img" src={img05} alt=" "/>
+          <img className="work-img" src={img06} alt=" "/>
+          <img className="work-img" src={img07} alt=" "/>
         </div>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../Card.css";
-import at01 from "../../images/at01.png";
-import at02 from "../../images/at02.png";
+import at01 from "../../images/workimg/arttalk/01.png";
+import at02 from "../../images/workimg/arttalk/02.png";
 
 class ArtTalk extends Component {
   render() {

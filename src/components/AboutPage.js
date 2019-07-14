@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
-import ui01 from "../../src/images/ui01.png";
-import Character from "../../src/images/character.png";
-import Code from "../../src/images/code.png";
-import TestVideo from "../../src/images/testvideo.mp4";
-import MotionVideo from "../../src/images/motionvideo.mp4";
+import ui01 from "../../src/images/about/ui01.png";
+import Character from "../../src/images/about/character.png";
+import Code from "../../src/images/about/code.png";
+import TestVideo from "../../src/images/about/testvideo.mp4";
+import MotionVideo from "../../src/images/about/motionvideo.mp4";
 import Footer from "./Footer";
 const imageStyle = {
   height: "100%"

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import "./Card.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import img from "../images/showbox/sh_arttalk.png";
 
 class ShowBoxFirst extends Component {
   render() {
@@ -23,7 +24,7 @@ class ShowBoxFirst extends Component {
             >
               <img
                 className="showBox-img"
-                src="http://leejoonmo.com/thumbnail/showboxarttalk.png"
+                src={img}
                 alt=" "
               />
             </div>

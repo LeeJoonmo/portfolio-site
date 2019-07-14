@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import "./Card.css";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import img from "../images/showbox/sh_daummobile.jpg";
+
 class ShowBoxSecond extends Component {
   render() {
     return (
@@ -17,7 +19,7 @@ class ShowBoxSecond extends Component {
             >
               <img
                 className="showBox-img"
-                src="http://leejoonmo.com/workimg/daummobile/tomain.jpg"
+                src={img}
                 alt=" "
               />
             </div>

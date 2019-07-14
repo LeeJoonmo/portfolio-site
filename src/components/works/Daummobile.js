@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import "../Card.css";
+//import images
+import img01 from "../../images/workimg/daummobile/01.jpg";
+import img02 from "../../images/workimg/daummobile/02.jpg";
+import img03 from "../../images/workimg/daummobile/03.jpg";
+import img04 from "../../images/workimg/daummobile/04.jpg";
+import img05 from "../../images/workimg/daummobile/05.jpg";
+import img06 from "../../images/workimg/daummobile/06.jpg";
 
-// over.addEventListener('mouseenter', _enterEvent);
 
 class Daummobile extends Component {
   
@@ -21,37 +27,12 @@ class Daummobile extends Component {
             </div>
           </div>
         
-          
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/01.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/02.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/03.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/04.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/05.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/daummobile/06.jpg"
-            alt=" "
-          />
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+          <img className="work-img" src={img05} alt=" "/>
+          <img className="work-img" src={img06} alt=" "/>
                    
           
         </div>
@@ -61,40 +42,3 @@ class Daummobile extends Component {
 }
 
 export default Daummobile;
-
-// import YouTube from "react-youtube";
-// const opts = {
-//     width: "1280",
-//     height: "720",
-//     playerVars: {
-//       // https://developers.google.com/youtube/player_parameters
-//       autoplay: 0,
-//       rel: 0
-//     }
-//   };
-// import React from 'react';
-
-// class Example extends React.Component {
-//   render() {
-//     const opts = {
-//       height: '390',
-//       width: '640',
-//       playerVars: { // https://developers.google.com/youtube/player_parameters
-//         autoplay: 1
-//       }
-//     };
-
-//     return (
-  // <YouTube
-  //   videoId="2g811Eo7K8U"
-  //   opts={opts}
-  //   onReady={this._onReady}
-  // />
-//     );
-//   }
-
-//   _onReady(event) {
-//     // access to player in all event handlers via event.target
-//     event.target.pauseVideo();
-//   }
-// }

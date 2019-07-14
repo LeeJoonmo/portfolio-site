@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import "../Card.css";
+//import images
+import img01 from "../../images/workimg/weather/01.jpg";
+import img02 from "../../images/workimg/weather/02.jpg";
+import img03 from "../../images/workimg/weather/03.jpg";
+import img04 from "../../images/workimg/weather/04.jpg";
+import img05 from "../../images/workimg/weather/05.jpg";
 
-// over.addEventListener('mouseenter', _enterEvent);
+
 
 class Weather extends Component {
   
@@ -21,31 +27,11 @@ class Weather extends Component {
           </div>
         
           
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/weather/01.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/weather/02.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/weather/03.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/weather/04.jpg"
-            alt=" "
-          />
-          <img
-            className="work-img"
-            src="http://leejoonmo.com/workimg/weather/05.jpg"
-            alt=" "
-          />
+          <img className="work-img" src={img01} alt=" "/>
+          <img className="work-img" src={img02} alt=" "/>
+          <img className="work-img" src={img03} alt=" "/>
+          <img className="work-img" src={img04} alt=" "/>
+          <img className="work-img" src={img05} alt=" "/>
                    
           
         </div>

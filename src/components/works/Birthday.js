@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 import "../Card.css";
 
-// over.addEventListener('mouseenter', _enterEvent);
+//import images
+import img01 from "../../images/workimg/birthday/01.jpg";
+import img02 from "../../images/workimg/birthday/02.jpg";
+import img03 from "../../images/workimg/birthday/03.jpg";
+import img04 from "../../images/workimg/birthday/04.jpg";
+import img05 from "../../images/workimg/birthday/05.jpg";
+import img06 from "../../images/workimg/birthday/06.jpg";
+import img07 from "../../images/workimg/birthday/07.jpg";
+import img08 from "../../images/workimg/birthday/08.jpg";
+import img09 from "../../images/workimg/birthday/09.jpg";
+import img10 from "../../images/workimg/birthday/10.jpg";
 
 class Birthday extends Component {
   
@@ -40,52 +50,52 @@ class Birthday extends Component {
           <div className = "work-uptext">Still Image</div>
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/01.jpg"
+            src={img01}
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/02.jpg"
+            src={img02}
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/03.jpg"
+            src={img03}
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/04.jpg"
+            src={img04}
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/05.jpg"
+            src={img05}
             alt=" "
           />
           <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/06.jpg"
+            src={img06}
             alt=" "
           />
                     <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/07.jpg"
+            src={img07}
             alt=" "
           />
                     <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/08.jpg"
+            src={img08}
             alt=" "
           />
                     <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/09.jpg"
+            src={img09}
             alt=" "
           />
                     <img
             className="work-img"
-            src="http://leejoonmo.com/workimg/birthday/10.jpg"
+            src={img10}
             alt=" "
           />
           
@@ -96,40 +106,3 @@ class Birthday extends Component {
 }
 
 export default Birthday;
-
-// import YouTube from "react-youtube";
-// const opts = {
-//     width: "1280",
-//     height: "720",
-//     playerVars: {
-//       // https://developers.google.com/youtube/player_parameters
-//       autoplay: 0,
-//       rel: 0
-//     }
-//   };
-// import React from 'react';
-
-// class Example extends React.Component {
-//   render() {
-//     const opts = {
-//       height: '390',
-//       width: '640',
-//       playerVars: { // https://developers.google.com/youtube/player_parameters
-//         autoplay: 1
-//       }
-//     };
-
-//     return (
-  // <YouTube
-  //   videoId="2g811Eo7K8U"
-  //   opts={opts}
-  //   onReady={this._onReady}
-  // />
-//     );
-//   }
-
-//   _onReady(event) {
-//     // access to player in all event handlers via event.target
-//     event.target.pauseVideo();
-//   }
-// }
