@@ -9,9 +9,8 @@ class Rio extends Component {
           <div className="work-info">
             <div className="work-info-title">카카오 뱅크</div>
             <div className="work-info-detail">
-              2016 리우데자네이루 올림픽을 맞아 응원의 메세지를 전달하는
-              캠페인이다. 카카오프렌즈가 가진 '일상'이라는 키워드와 올림픽 주요
-              종목들을 연결시켜, '뜻밖의 리우' 상황을 표현했다.
+              2015년도 카카오뱅크 인터넷은행 인가를 받기 위한 프로젝트. 
+              회사 설립 전 금융위의 인가를 위해 브랜드 메세지와 비전 영상을 제작했다. 
             </div>
             <div className="work-info-add">
               <div>
@@ -29,7 +28,7 @@ class Rio extends Component {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/IBb_mjVB4Ak"
+                src="https://www.youtube.com/embed/RBu-nQbvDqQ"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -71,6 +70,16 @@ class Rio extends Component {
           <img
             className="work-img"
             src="http://leejoonmo.com/workimg/kakaobank/07.jpg"
+            alt=" "
+          />
+                    <img
+            className="work-img"
+            src="http://leejoonmo.com/workimg/kakaobank/08.jpg"
+            alt=" "
+          />
+                    <img
+            className="work-img"
+            src="http://leejoonmo.com/workimg/kakaobank/09.jpg"
             alt=" "
           />
 

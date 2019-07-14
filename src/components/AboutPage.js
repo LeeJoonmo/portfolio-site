@@ -236,7 +236,7 @@ class AboutPage extends Component {
         <ContentsContainer>
           <Controller>
             {/*First Scene*/}
-            <Scene duration={"100%"} pin={true} triggerHook={0}>
+            <Scene duration={"170%"} pin={true} triggerHook={0}>
               <Timeline wrapper={<ImageContainer />}>
                 <Tween
                   to={{ opacity: 1 }}
@@ -278,7 +278,7 @@ class AboutPage extends Component {
             </Scene>
             <SectionHeight />
             {/*Second Scene*/}
-            <Scene duration={"100%"} pin={true} triggerHook={0}>
+            <Scene duration={"170%"} pin={true} triggerHook={0}>
               <Timeline wrapper={<VideoContainer />}>
                 <Tween
                   to={{ opacity: 1 }}
@@ -328,7 +328,7 @@ class AboutPage extends Component {
             </Scene>
             <SectionHeight />
             {/*Third Scene*/}
-            <Scene duration={"100%"} pin={true} triggerHook={0}>
+            <Scene duration={"170%"} pin={true} triggerHook={0}>
               <Timeline wrapper={<VideoContainer />}>
                 <Tween
                   to={{ opacity: 1 }}
@@ -378,7 +378,7 @@ class AboutPage extends Component {
             </Scene>
             <SectionHeight />
             {/*Third Scene*/}
-            <Scene duration={"100%"} pin={true} triggerHook={0}>
+            <Scene duration={"170%"} pin={true} triggerHook={0}>
               <Timeline wrapper={<ImageContainer />}>
                 <Tween
                   to={{ opacity: 1 }}
@@ -420,7 +420,7 @@ class AboutPage extends Component {
             </Scene>
             <SectionHeight />
             {/*First Scene*/}
-            <Scene duration={"100%"} pin={true} triggerHook={0}>
+            <Scene duration={"170%"} pin={true} triggerHook={0}>
               <Timeline wrapper={<ImageContainer />}>
                 <Tween
                   to={{ opacity: 1 }}

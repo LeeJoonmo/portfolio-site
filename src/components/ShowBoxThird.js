@@ -23,7 +23,7 @@ class ShowBoxFirst extends Component {
             >
               <img
                 className="showBox-img"
-                src="http://leejoonmo.com/thumbnail/showbox.png"
+                src="http://leejoonmo.com/thumbnail/showboxarttalk.png"
                 alt=" "
               />
             </div>
