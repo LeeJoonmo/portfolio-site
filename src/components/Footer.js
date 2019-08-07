@@ -27,7 +27,7 @@ const Footer = () => {
     <Container>
       <Content>
         Copyright Joonmo Lee <br />
-        We Love Today.
+        Love Today.
       </Content>
     </Container>
   );

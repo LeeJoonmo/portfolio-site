@@ -42,12 +42,10 @@ const FirstScene = styled.div`
     position: relative;
     background-color: #ffffff;
     padding-top: 15px;
-    padding-bottom: 40px;
-    color: black;
-    font-size: 50px;
-    padding-bottom: 12px;
+    color: rgba(0,0,0,0.3);
+    font-size: 20px;
     @media (max-width: 510px) {
-      font-size: 25px;
+      font-size: 16px;
       padding-bottom: 0px;
     }
   }
@@ -57,9 +55,8 @@ const FirstScene = styled.div`
     margin: auto;
     position: relative;
     font-size: 20px;
-    font-weight: 500;
     line-height: 2;
-    padding-top: 20px;
+    padding-top: 5px;
     color: rgba(0,0,0,0.3);
     @media (max-width: 510px) {
       font-size: 16px;
@@ -102,9 +99,9 @@ class AboutPage extends Component {
                   duration={0.4}
                 >
                   <div className="profile-info" style={{ opacity: 1 }}>
-                    이야기를 만들고, 그리는 일을 합니다.
+                    재미있는 이야기를 만들고, 그리는 일을 합니다.
                     <br />
-                    서울대학교 시각디자인과에서 공부했습니다. 
+                    서울대학교 시각디자인과를 졸업하고
                     <br />
                     카카오에서 디자이너로 일하고 있습니다.
                     <br />

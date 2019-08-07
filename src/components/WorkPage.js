@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardContainer from './CardContainer';
 import './Header.css';
+import Footer from './Footer';
 
 
 
@@ -28,7 +29,6 @@ class WorkPage extends Component {
         // const etcWorks = worksData.filter((work) =>
         // work.category === 'etc'
         // );
-console.log(uiWorks);
         return(
             
             <div>
@@ -40,9 +40,9 @@ console.log(uiWorks);
                 <CardContainer worksData = {brandingWorks}/>
                 <div className = "work-category">CHARACTER</div>
                 <CardContainer worksData = {characterWorks}/>
-                <div className = "work-category">ETC, EXPERIENCE</div>
 
                 </div>
+                <Footer></Footer>
             </div>
         );
     }
