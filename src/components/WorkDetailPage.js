@@ -16,6 +16,8 @@ class WorkDetailPage extends Component {
 
   componentDidMount(){
     window.scrollTo(0,0);
+    const body = document.querySelector("body");
+    body.style.backgroundColor = "white";
   }
 
   _renderWork = (props) => {

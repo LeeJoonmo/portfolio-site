@@ -87,11 +87,12 @@ body {
 }
 .cardImg {
   width: 100%;
-  border: 1px solid #f5f5f5;
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
 .card-title {
+  color: white;
   font-size: 17px;
   padding-top: 7px;
   transition: opacity 0.3s;
@@ -320,6 +321,7 @@ body {
     max-width: 250px;
   }
   .card-title {
+
     font-size: 15px;
     padding-top: 7px;
   }
