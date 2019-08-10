@@ -6,6 +6,7 @@ import MainPage from "../components/MainPage";
 import AboutPage from "../components/AboutPage";
 import WorkPage from "../components/WorkPage";
 import WorkDetailPage from "../components/WorkDetailPage";
+import PortfolioPage from "../components/PortfolioPage";
 import {Kakaobank, Birthday, Cheerup, Popcorn, Muzicon, Rio, Helloryan, Ryanback, Friendspop, Kakaodriver, Camping, Typeface, Village, Daummobile, Kakaostory, Daumlocal, Weather, ArtTalk} from "../components/works";
 //import thumbnail Images
 import th_arttalk from "../images/thumbnail/arttalk.jpg";
@@ -64,19 +65,26 @@ _renderWorkPage = () =>{
 _renderWorkDetailPage = (props) =>{
   return <WorkDetailPage {...props} worksData = {this.state.worksData}/>
 }
+_renderPortfolioPage = (props) =>{
+  return <PortfolioPage {...props} worksData = {this.state.worksData}/>
+}
 
 
   render() {
     return (
       <BrowserRouter>
+      
         <div>
-          <Header />
-          <Switch>
-            <Route exact path="/" render={this._renderMainPage} />
-            <Route path="/work" render={this._renderWorkPage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/workDetail/:id" render= {this._renderWorkDetailPage} />
-          </Switch>
+
+            <Header />
+            <Switch>
+              
+              <Route exact path="/" render={this._renderMainPage} />
+              <Route path="/work" render={this._renderWorkPage} />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/workDetail/:id" render= {this._renderWorkDetailPage} />
+              <Route path="/portfolio" render= {this._renderPortfolioPage} />
+            </Switch>
         </div>
       </BrowserRouter>
     );
