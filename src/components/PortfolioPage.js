@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardContainer from "./CardContainer";
+const resume = require("../images/portfolio/resume.jpg");
 
 const daum1 = require("../images/portfolio/daum_01_main.jpg");
 const daum2 = require("../images/portfolio/daum_02_overview.jpg");
@@ -31,7 +32,6 @@ const center1 = require("../images/portfolio/center_01_main.png");
 const center3 = require("../images/portfolio/center_03_ux.png");
 const center4 = require("../images/portfolio/center_04_system.png");
 const center5 = require("../images/portfolio/center_05_overview.png");
-const center6 = require("../images/portfolio/center_06_overview.png");
 const centerMovie = require("../images/portfolio/mainproto.mp4");
 
 class WorkPage extends Component {
@@ -43,8 +43,11 @@ class WorkPage extends Component {
   componentDidMount() {
     const header = document.querySelector(".header");
     const body = document.querySelector("body");
+    const input = document.querySelector('#passinput');
     header.style.display = "none";
     this.state.permission ? body.style.backgroundColor = "black" : body.style.backgroundColor = "white" ;
+    input.focus();
+    
   }
   componentDidUpdate(){
     const header = document.querySelector(".header");
@@ -64,7 +67,7 @@ class WorkPage extends Component {
   }
   _handleSubmit = (event) => {
     const value = this.state.password;
-    if (value === "zoey"){
+    if (value === "toss"){
       this.setState({permission: true});
     } else {
       alert('패스워드가 틀립니다, 강수영님에게 문의해 주세요.');
@@ -82,6 +85,7 @@ _renderPermission=()=>{
           </div>
           
           <input
+            id="passinput"
             name="numberOfGuests"
             type="string"
             placeholder="Password를 입력해 주세요"
@@ -104,6 +108,8 @@ _renderPermission=()=>{
           <div
             style={{ width: "100%", height: "100px", backgroundColor: "black" }}
           />
+          <img src={resume} style={styles.img} alt="" />
+
           <img src={daum1} style={styles.img} alt="" />
           <img src={daum2} style={styles.img} alt="" />
           <img src={daum3} style={styles.img} alt="" />
@@ -146,7 +152,6 @@ _renderPermission=()=>{
           <img src={center3} style={styles.img} alt="" />
           <img src={center4} style={styles.img} alt="" />
           <img src={center5} style={styles.img} alt="" />
-          <img src={center6} style={styles.img} alt="" />
 
 
           <img src={local1} style={styles.img} alt="" />
