@@ -168,6 +168,9 @@ _renderPermission=()=>{
           <div style = {{width: '100%', marginBottom: '100px',justifyContent:'center', alignItems:'center', textAlign:'center', height: 300, display:'flex', lineHeight: 1.8, color: 'white', fontSize: 26}}>제 포트폴리오를 봐 주셔서 정말 감사합니다.<br/> 진행중인 프로젝트가 포함되어 있어서 보안을 부탁드려요! <br/> 브랜딩, 모션, 애니메이션 등 제 다른 작업들은 하단에서 간략히 보실 수 있습니다 :) </div>
           <div style={{maxWidth:'1500px', margin: 'auto'}}>
           <CardContainer worksData={this.props.worksData} />
+          <div
+            style={{ width: "100%", height: "100px", backgroundColor: "black" }}
+          />
         </div>
         </div>
 
