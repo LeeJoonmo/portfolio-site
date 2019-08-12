@@ -25,8 +25,8 @@ const appstore1 = require("../images/portfolio/appstore_01_main.jpg");
 const appstore3 = require("../images/portfolio/appstore_03_list.jpg");
 const appstore4 = require("../images/portfolio/appstore_04_sdk.jpg");
 const appstore5 = require("../images/portfolio/appstore_05.jpg");
-const appstore6 = require("../images/portfolio/appstore_06.jpg");
 const appstoreMovie = require("../images/portfolio/overview_small.mp4");
+const appstoreReact = require("../images/portfolio/appreact.mp4");
 
 const center1 = require("../images/portfolio/center_01_main.png");
 const center3 = require("../images/portfolio/center_03_ux.png");
@@ -72,7 +72,7 @@ class WorkPage extends Component {
     } else {
       alert('패스워드가 틀립니다, 강수영님에게 문의해 주세요.');
     }
-   
+   this.setState({password:""});
     event.preventDefault();
   }
 _renderPermission=()=>{
@@ -81,7 +81,7 @@ _renderPermission=()=>{
     <div style={{width: '400px', margin:'auto'}}>
       <form onSubmit={this._handleSubmit}>
           <div style={{width: '400px', fontSize: 15, marginBottom: '40px'}}>
-          반가워요! 저는 이준모입니다.<br/> 포트폴리오에 진행중인 프로젝트가 포함되어 있습니다.<br/> Password를 입력해 주세요. 감사합니다 :D
+          반갑습니다. 저는 이준모입니다.<br/> 포트폴리오에 진행중인 프로젝트가 포함되어 있습니다.<br/> Password를 입력해 주세요. 감사합니다 :D
           </div>
           
           <input
@@ -132,7 +132,21 @@ _renderPermission=()=>{
           <img src={appstore3} style={styles.img} alt="" />
           <img src={appstore4} style={styles.img} alt="" />
           <img src={appstore5} style={styles.img} alt="" />
-          <img src={appstore6} style={styles.img} alt="" />
+          <div style={{ color: "white", fontSize: 18, marginBottom: "13px" }}>
+            Prototype (React Native)<br/>
+            사용성을 지속적으로 확인하기 위해, <br/>React Native로 직접 네이티브 앱 프로토타이핑을 했습니다.
+          </div>
+          <video
+            className="videos"
+            id="appstore-video"
+            style={{ width: "100%", marginBottom: "100px" }}
+            controls
+            autoPlay
+            loop
+            muted
+          >
+            <source className="video-source" src={appstoreReact} />
+          </video>
 
           <img src={center1} style={styles.img} alt="" />
           <div style={{ color: "white", fontSize: 18, marginBottom: "13px" }}>
@@ -201,7 +215,7 @@ const styles = {
     opacity: 0.5
   },
   container: {
-    width: "67%",
+    width: "70%",
     height: "100px",
     backgroundColor: "white",
     margin: "auto"

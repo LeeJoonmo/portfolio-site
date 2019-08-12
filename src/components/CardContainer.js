@@ -39,7 +39,7 @@ class CardContainer extends Component {
   }
   cardList = this.state.worksData.map((work, index) => 
 
-    <NavLink className="card" to = {`/workDetail/${work.name}`} key={index}>
+    <NavLink className="card" to = {`/workDetail/${work.name}`} key={index} target="_blank">
       <Card title = {work.title} info = {work.info} thumbnail = {work.thumbnail}/>
     </NavLink>
   )

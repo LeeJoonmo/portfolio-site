@@ -18,6 +18,8 @@ class WorkDetailPage extends Component {
     window.scrollTo(0,0);
     const body = document.querySelector("body");
     body.style.backgroundColor = "white";
+    const header = document.querySelector(".header");
+    header.style.display = "none";
   }
 
   _renderWork = (props) => {
