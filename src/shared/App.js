@@ -101,7 +101,7 @@ _renderPortfolioPage = (props) =>{
             <Header />
             <Switch>
               
-              <Route exact path="/" render={this._renderMainPage} />
+              <Route exact path="/" render={this._renderPortfolioPage} />
               <Route path="/work" render={this._renderWorkPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/workDetail/:id" render= {this._renderWorkDetailPage} />

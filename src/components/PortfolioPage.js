@@ -67,10 +67,10 @@ class WorkPage extends Component {
   }
   _handleSubmit = (event) => {
     const value = this.state.password;
-    if (value === "toss"){
+    if (value === "toss" || "joonmo"){
       this.setState({permission: true});
     } else {
-      alert('패스워드가 틀립니다, 강수영님에게 문의해 주세요.');
+      alert('패스워드가 틀렸습니다.');
     }
    this.setState({password:""});
     event.preventDefault();
