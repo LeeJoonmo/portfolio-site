@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import CardContainer from "./CardContainer";
+import "./PortfolioPage.css"
+
 //img import area
 const resume = require("../images/portfolio/resume_leejoonmo.jpg");
 
@@ -136,7 +138,7 @@ class WorkPage extends Component {
     return (
       <>
         <div>
-          <div style={styles.container}>
+          <div className="portContainer">
             <div
               style={{
                 width: "100%",
@@ -144,23 +146,22 @@ class WorkPage extends Component {
                 backgroundColor: "black"
               }}
             />
-            <img src={resume} style={styles.img} alt="" />
+            <img src={resume} className="portImg" alt="" />
 
-            <img src={daum1} style={styles.img} alt="" />
-            <img src={daum2} style={styles.img} alt="" />
-            <img src={daum2_1} style={styles.img} alt="" />
-            <img src={daum2_2} style={styles.img} alt="" />
-            <img src={daum2_3} style={styles.img} alt="" />
-            <img src={daum3} style={styles.img} alt="" />
-            <img src={daum4} style={styles.img} alt="" />
-            <img src={daum5} style={styles.img} alt="" />
-            <img src={daum6} style={styles.img} alt="" />
+            <img src={daum1} className="portImg" alt="" />
+            <img src={daum2} className="portImg" alt="" />
+            <img src={daum2_1} className="portImg" alt="" />
+            <img src={daum2_2} className="portImg" alt="" />
+            <img src={daum2_3} className="portImg" alt="" />
+            <img src={daum3} className="portImg" alt="" />
+            <img src={daum4} className="portImg" alt="" />
+            <img src={daum5} className="portImg" alt="" />
+            <img src={daum6} className="portImg" alt="" />
 
-            <img src={appstore1} style={styles.img} alt="" />
+            <img src={appstore1} className="portImg" alt="" />
             <video
               className="videos"
               id="appstore-video"
-              style={{ width: "100%", marginBottom: "100px" }}
               controls
               autoPlay
               loop
@@ -169,12 +170,12 @@ class WorkPage extends Component {
               <source className="video-source" src={appstoreMovie} />
             </video>
             
-            <img src={appstore2} style={styles.img} alt="" />
-            <img src={appstore3} style={styles.img} alt="" />
-            <img src={appstore4} style={styles.img} alt="" />
-            <img src={appstore4_1} style={styles.img} alt="" />
-            <img src={appstore5} style={styles.img} alt="" />
-            <div style={{ color: "white", fontSize: 18, marginBottom: "13px" }}>
+            <img src={appstore2} className="portImg" alt="" />
+            <img src={appstore3} className="portImg" alt="" />
+            <img src={appstore4} className="portImg" alt="" />
+            <img src={appstore4_1} className="portImg" alt="" />
+            <img src={appstore5} className="portImg" alt="" />
+            <div className="portText">
               Prototype (React Native)
               <br />
               사용성을 지속적으로 확인하기 위해, <br />
@@ -183,7 +184,6 @@ class WorkPage extends Component {
             <video
               className="videos"
               id="appstore-video"
-              style={{ width: "100%", marginBottom: "100px" }}
               controls
               autoPlay
               loop
@@ -192,14 +192,13 @@ class WorkPage extends Component {
               <source className="video-source" src={appstoreReact} />
             </video>
 
-            <img src={center1} style={styles.img} alt="" />
+            <img src={center1} className="portImg" alt="" />
             <div style={{ color: "white", fontSize: 18, marginBottom: "13px" }}>
               Prototype (Reactjs)
             </div>
             <video
               className="videos"
               id="appstore-video"
-              style={{ width: "100%", marginBottom: "100px" }}
               controls
               autoPlay
               loop
@@ -207,36 +206,25 @@ class WorkPage extends Component {
             >
               <source className="video-source" src={centerMovie} />
             </video>
-            <img src={center3} style={styles.img} alt="" />
-            <img src={center4} style={styles.img} alt="" />
-            <img src={center5} style={styles.img} alt="" />
-            <img src={center6} style={styles.img} alt="" />
+            <img src={center3} className="portImg" alt="" />
+            <img src={center4} className="portImg" alt="" />
+            <img src={center5} className="portImg" alt="" />
+            <img src={center6} className="portImg" alt="" />
 
-            <img src={local1} style={styles.img} alt="" />
-            <img src={local1_1} style={styles.img} alt="" />
-            <img src={local2} style={styles.img} alt="" />
-            <img src={local3} style={styles.img} alt="" />
-            <img src={local4} style={styles.img} alt="" />
-            <img src={local5} style={styles.img} alt="" />
+            <img src={local1} className="portImg" alt="" />
+            <img src={local1_1} className="portImg" alt="" />
+            <img src={local2} className="portImg" alt="" />
+            <img src={local3} className="portImg" alt="" />
+            <img src={local4} className="portImg" alt="" />
+            <img src={local5} className="portImg" alt="" />
 
-            <img src={weather1} style={styles.img} alt="" />
-            <img src={weather2} style={styles.img} alt="" />
-            <img src={weather3} style={styles.img} alt="" />
-            <img src={weather4} style={styles.img} alt="" />
-            <img src={weather5} style={styles.img} alt="" />
+            <img src={weather1} className="portImg" alt="" />
+            <img src={weather2} className="portImg" alt="" />
+            <img src={weather3} className="portImg" alt="" />
+            <img src={weather4} className="portImg" alt="" />
+            <img src={weather5} className="portImg" alt="" />
             <div
-              style={{
-                width: "100%",
-                marginBottom: "100px",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center",
-                height: 300,
-                display: "flex",
-                lineHeight: 1.8,
-                color: "white",
-                fontSize: 26
-              }}
+              className="portEndText"
             >
               제 포트폴리오를 봐 주셔서 정말 감사합니다.
               <br /> 진행중인 프로젝트가 포함되어 있어서 보안을 부탁드려요!
@@ -269,25 +257,6 @@ class WorkPage extends Component {
   }
 }
 
-const styles = {
-  img: {
-    width: "100%",
-    marginBottom: "100px"
-  },
-  headerCover: {
-    position: "absolute",
-    zIndex: 300,
-    width: "100%",
-    height: "100px",
-    backgroundColor: "white",
-    opacity: 0.5
-  },
-  container: {
-    width: "70%",
-    height: "100px",
-    backgroundColor: "white",
-    margin: "auto"
-  }
-};
+
 
 export default WorkPage;
