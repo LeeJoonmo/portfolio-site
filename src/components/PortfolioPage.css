@@ -100,6 +100,16 @@ select {
     color: white;
     font-size: 26
 }
+.formContainer{
+  width: 400px;
+  margin:auto;
+}
+.passwordInput{
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  padding-left: 100px;
+}
 @media screen and (max-width: 1080px) {
   .portImg {
     margin-bottom: 40px;
@@ -119,5 +129,11 @@ select {
 .portEndText{
     line-height: 1.8;
     font-size: 20
+}
+.formContainer{
+  width: 300px;
+}
+.passwordInput{
+  padding-left: 40px;
 }
 }

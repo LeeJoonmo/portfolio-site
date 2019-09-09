@@ -88,9 +88,9 @@ class WorkPage extends Component {
   _renderPermission = () => {
     return (
       <div style={{ width: "100%", height: 500, marginTop: "150px" }}>
-        <div style={{ width: "400px", margin: "auto" }}>
+        <div className="formContainer">
           <form onSubmit={this._handleSubmit}>
-            <div style={{ width: "400px", fontSize: 15, marginBottom: "40px" }}>
+            <div style={{ width: "100%", fontSize: 15, marginBottom: "40px" }}>
               반갑습니다. 저는 이준모입니다.
               <br /> 포트폴리오에 진행중인 프로젝트가 포함되어 있습니다.
               <br /> Password를 입력해 주세요. 감사합니다 :D
@@ -103,19 +103,14 @@ class WorkPage extends Component {
               placeholder="Password를 입력해 주세요"
               value={this.state.password}
               onChange={this._handleInputChange}
-              style={{
-                width: 400,
-                height: 100,
-                fontSize: 20,
-                paddingLeft: 100
-              }}
+              className="passwordInput"
             />
             <div>
               <button
                 type="submit"
                 value="Submit"
                 style={{
-                  width: 400,
+                  width: "100%",
                   paddingTop: "20px",
                   paddingBottom: "20px",
                   border: "none",
