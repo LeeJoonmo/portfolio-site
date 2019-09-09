@@ -77,7 +77,7 @@ class WorkPage extends Component {
   };
   _handleSubmit = event => {
     const value = this.state.password;
-    if (value === "naver" || value === "joonmo") {
+    if (value === "naver" || value === "joonmo" || value === "Naver") {
       this.setState({ permission: true });
     } else {
       alert("패스워드가 틀렸습니다.");
@@ -163,7 +163,7 @@ class WorkPage extends Component {
               loop
               muted
             >
-              <source className="video-source" playsInline src={appstoreMovie} />
+              <source className="video-source" src={appstoreMovie} />
             </video>
             
             <img src={appstore2} className="portImg" alt="" />
@@ -181,6 +181,7 @@ class WorkPage extends Component {
               className="videos"
               id="appstore-video"
               controls
+              playsInline
               autoPlay
               loop
               muted
@@ -196,6 +197,7 @@ class WorkPage extends Component {
               className="videos"
               id="appstore-video"
               controls
+              playsInline
               autoPlay
               loop
               muted
