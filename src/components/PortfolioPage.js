@@ -144,10 +144,10 @@ class WorkPage extends Component {
             <img src={resume} className="portImg" alt="" />
 
             <img src={daum1} className="portImg" alt="" />
-            <img src={daum2} className="portImg" alt="" />
             <img src={daum2_1} className="portImg" alt="" />
             <img src={daum2_2} className="portImg" alt="" />
             <img src={daum2_3} className="portImg" alt="" />
+            <img src={daum2} className="portImg" alt="" />
             <img src={daum3} className="portImg" alt="" />
             <img src={daum4} className="portImg" alt="" />
             <img src={daum5} className="portImg" alt="" />
