@@ -163,11 +163,12 @@ class WorkPage extends Component {
               className="videos"
               id="appstore-video"
               controls
+              playsInline
               autoPlay
               loop
               muted
             >
-              <source className="video-source" src={appstoreMovie} />
+              <source className="video-source" playsInline src={appstoreMovie} />
             </video>
             
             <img src={appstore2} className="portImg" alt="" />
