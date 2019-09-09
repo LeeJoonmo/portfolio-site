@@ -168,7 +168,7 @@ class WorkPage extends Component {
             >
               <source className="video-source" src={appstoreMovie} />
             </video>
-            <iframe title = "overview" width="560" height="315" src="https://www.youtube.com/embed/q5cix6zDF_0?mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
             <img src={appstore2} style={styles.img} alt="" />
             <img src={appstore3} style={styles.img} alt="" />
             <img src={appstore4} style={styles.img} alt="" />
