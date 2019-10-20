@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade';
 class CardContainer extends Component {
   state = {
     worksData : this.props.worksData
-     
   }
   _enterFunction = e => {
     const cardText = e.target.querySelector(".cardText");
@@ -39,8 +38,8 @@ class CardContainer extends Component {
   }
   cardList = this.state.worksData.map((work, index) => 
 
-    <NavLink className="card" to = {`/workDetail/${work.name}`} key={index} target="_blank">
-      <Card title = {work.title} info = {work.info} thumbnail = {work.thumbnail}/>
+    <NavLink className="card" to = {`/workDetail/${work.name}`} key={index} target={this.props.target === "self" ?"_self":"_blank"}>
+      <Card title = {work.title} info = {work.info} thumbnail = {work.thumbnail} titleColor={this.props.titleColor}/>
     </NavLink>
   )
 

@@ -92,6 +92,12 @@ body {
 }
 
 .card-title {
+  color: #333333;
+  font-size: 17px;
+  padding-top: 7px;
+  transition: opacity 0.3s;
+}
+.card-title-white {
   color: white;
   font-size: 17px;
   padding-top: 7px;
@@ -321,7 +327,10 @@ body {
     max-width: 250px;
   }
   .card-title {
-
+    font-size: 15px;
+    padding-top: 7px;
+  }
+  .card-title-white {
     font-size: 15px;
     padding-top: 7px;
   }

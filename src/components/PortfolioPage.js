@@ -231,7 +231,7 @@ class WorkPage extends Component {
               수 있습니다 {`:)`}
             </div>
             <div style={{ maxWidth: "1500px", margin: "auto" }}>
-              <CardContainer worksData={this.props.worksData} />
+              <CardContainer worksData={this.props.worksData} target="blank" titleColor="white"/>
               <div
                 style={{
                   width: "100%",

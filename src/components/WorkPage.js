@@ -35,11 +35,11 @@ class WorkPage extends Component {
                 <div className = "container">
                 <div style = {{height: 35}}></div>
                 <div className = "work-category" style = {{marginTop:35}}>UI/UX</div>
-                <CardContainer worksData = {uiWorks}/>
+                <CardContainer worksData = {uiWorks} target="self" titleColor="#333333"/>
                 <div className = "work-category">BRANDING</div>
-                <CardContainer worksData = {brandingWorks}/>
+                <CardContainer worksData = {brandingWorks} target="self" titleColor="#333333"/>
                 <div className = "work-category">CHARACTER</div>
-                <CardContainer worksData = {characterWorks}/>
+                <CardContainer worksData = {characterWorks} target="self" titleColor="#333333"/>
 
                 </div>
                 <Footer></Footer>

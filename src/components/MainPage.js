@@ -15,7 +15,7 @@ class MainPage extends Component {
           <div className="main-title" style={{ color: "#333333" }}>
             Works
           </div>
-          <CardContainer worksData={this.state.worksData} />
+          <CardContainer worksData={this.state.worksData} target="self" titleColor="#333333"/>
           <Footer />
         </div>
       </div>

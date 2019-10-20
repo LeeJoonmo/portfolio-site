@@ -16,7 +16,7 @@ class Card extends Component {
         </div>
         <img className="cardImg" src={thumbnail[0]} alt={this.props.title} />
       </div>
-      <div className = "card-title">{this.props.title}</div>
+      <div className = "card-title" style = {{color:this.props.titleColor}}>{this.props.title}</div>
       </Fragment>
     );
   }

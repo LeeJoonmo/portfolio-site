@@ -87,6 +87,7 @@ _renderWorkPage = () =>{
 _renderWorkDetailPage = (props) =>{
   return <WorkDetailPage {...props} worksData = {this.state.worksData}/>
 }
+
 _renderPortfolioPage = (props) =>{
   return <PortfolioPage {...props} worksData = {this.state.worksDataPort}/>
 }
@@ -101,7 +102,7 @@ _renderPortfolioPage = (props) =>{
             <Header />
             <Switch>
               
-              <Route exact path="/" render={this._renderPortfolioPage} />
+              <Route exact path="/" render={this._renderMainPage} />
               <Route path="/work" render={this._renderWorkPage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/workDetail/:id" render= {this._renderWorkDetailPage} />
